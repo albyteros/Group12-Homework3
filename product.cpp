@@ -2,12 +2,13 @@
 #include "product.h"
 #include <sstream>
 #include <iomanip>
-std::string product::product_info()
+using namespace std;
+string product::product_info()
 {
     //format string for price
-    std::ostringstream price_str;
-    price_str<<std::fixed<<std::setprecision(2);
-    price_str >> price;
+    ostringstream price_str;
+    price_str << fixed << setprecision(2);
+    price_str <<  price;
 
     return "Product Name: " + name  + 
     "\nDescription: " + description +
