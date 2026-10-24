@@ -15,7 +15,7 @@ string address::address_info()
     }
     else
     {
-     return address_line1 + "\n" +
+     return address_line1 + "\n\n" +
             city          + "\n" + 
             state         + "\n" +
             zip           + "\n";  
