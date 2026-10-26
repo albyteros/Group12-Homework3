@@ -10,7 +10,7 @@ string product::product_info()
     price_str << fixed << setprecision(2);
     price_str <<  price;
 
-    return "Product Name: " + name  + 
+    return "Name: " + name  + 
     "\nDescription: " + description +
      "\nPrice: $" + price_str.str();
 

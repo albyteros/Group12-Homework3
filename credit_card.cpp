@@ -31,7 +31,7 @@ string credit_card::credit_card_info()
   ostringstream cc_str;
   cc_str << fixed << setprecision (2);
   cc_str << "Credit card number: " << cc_number
-         << "\nCredit Card Limit $" << limit
+         << "\nCredit Card Limit: $" << limit
          << "\nCurrent Balance: $" << current_balance;
 
     return cc_str.str();
