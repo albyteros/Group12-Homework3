@@ -13,8 +13,8 @@ string transaction::transaction_info()
 
 
 
-    return "Transaction Number: " + tran_str.str()  + 
-    "\nCustomer: " + customer.person_info() +
-     "\nPurchased Item: " + purchased_item.product_info() +
+    return "Transaction #: " + tran_str.str()  +
+    "\nCustomer: \n" + customer.person_info() +
+     "\nProduct: \n" + purchased_item.product_info() +
      "\nQuantity: " + quan_str.str();
 }
