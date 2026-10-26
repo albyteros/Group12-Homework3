@@ -176,8 +176,9 @@ string Store::purchase_history(Person customer)
 {
     string tran_info = "";
     for (int i = 0; i < num_transactions_; i++)
-    {
-        tran_info += transactions_[i].transaction_info() + "\n";
-    }
+        if (transactions_[i].customer.name() == customer.name())
+        {
+            tran_info += transactions_[i].transaction_info() + "\n";
+        }
     return tran_info;
 }
