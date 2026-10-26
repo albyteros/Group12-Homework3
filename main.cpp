@@ -2,6 +2,7 @@
 #include <fstream>
 #include <string>
 #include <cstdlib>
+#include <ctime>
 
 #include "address.h"
 #include "credit_card.h"
@@ -135,6 +136,9 @@ int main()
 	//from text files and add them to your store
 	cout << "Store info: " << endl << endl;
 	cout << store1.store_info() << endl << endl;
+
+	//seed rand so each run makes different transactions
+	srand(time(0));
 
 	//make random number of random transactions
 	int ran_num = rand() % 89 + 11;
